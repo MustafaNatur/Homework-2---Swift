@@ -19,10 +19,6 @@ class ViewController: UIViewController {
         setcolor()
         
         ViewForColor.backgroundColor = UIColor(red: CGFloat(const)/255, green: CGFloat(const)/255, blue: CGFloat(const)/255, alpha: 1.0)
-        
-
-
-        // Do any additional setup after loading the view.
     }
 
 

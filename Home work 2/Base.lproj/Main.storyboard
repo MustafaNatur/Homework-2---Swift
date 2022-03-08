@@ -88,6 +88,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Min">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ButtonMin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EuO-LJ-UL3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WG-Tu-Nlp">
                                 <rect key="frame" x="158" y="127" width="98" height="32"/>
