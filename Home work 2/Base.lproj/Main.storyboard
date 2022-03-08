@@ -88,10 +88,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Min">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="ButtonMin1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLP-Kn-BRn"/>
-                                    <action selector="ButtonMin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79f-zn-Sg3"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WG-Tu-Nlp">
                                 <rect key="frame" x="158" y="127" width="98" height="32"/>
@@ -119,8 +115,15 @@
                                     <action selector="ButtonMax:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kyi-7g-PWf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mixed color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPx-Yb-RWU">
+                                <rect key="frame" x="45" y="432" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7B-K6-kfn">
-                                <rect key="frame" x="63" y="472" width="299" height="194"/>
+                                <rect key="frame" x="58" y="471" width="299" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hJ-Ni-At4">
@@ -131,13 +134,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.4588235021" green="0.082352943720000002" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mixed color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPx-Yb-RWU">
-                                <rect key="frame" x="45" y="432" width="93" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -147,9 +143,9 @@
                         <outlet property="labelValueSliderBlue" destination="f3E-gf-9dy" id="Cod-zL-0lP"/>
                         <outlet property="labelValueSliderGreen" destination="Bz8-kb-RVd" id="xgJ-HU-NHm"/>
                         <outlet property="labelValueSliderRed" destination="aDH-T1-F3Q" id="MUN-De-5q2"/>
+                        <outlet property="sliderValueBlue" destination="QwM-A0-haN" id="Ejb-2g-CUz"/>
+                        <outlet property="sliderValueGreen" destination="Nuj-zV-WBL" id="4BM-gG-sST"/>
                         <outlet property="sliderValueRed" destination="PTs-Wi-Ghg" id="4F3-53-48z"/>
-                        <outlet property="slierValueBlue" destination="QwM-A0-haN" id="Ejb-2g-CUz"/>
-                        <outlet property="slierValueGreen" destination="Nuj-zV-WBL" id="4BM-gG-sST"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
