@@ -11,21 +11,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let const = ( sliderValueRed.maximumValue - sliderValueRed.minimumValue)/2
         
-        setConstValue(value: const)
-        
-        setcolor()
-        
-        ViewForColor.backgroundColor = UIColor(red: CGFloat(const)/255, green: CGFloat(const)/255, blue: CGFloat(const)/255, alpha: 1.0)
+        setConstValue(value: const) // set const for sliderValue
+        setcolor() // label -> sliderValue
+        changeViewValue() // ViewColor -> sliderValue
     }
 
 
     @IBOutlet weak var labelValueSliderRed: UILabel!
     @IBOutlet weak var labelValueSliderGreen: UILabel!
     @IBOutlet weak var labelValueSliderBlue: UILabel!
+    
     @IBOutlet weak var ViewForColor: UIView!
+    
     @IBOutlet weak var sliderValueRed: UISlider!
     @IBOutlet weak var sliderValueGreen: UISlider!
     @IBOutlet weak var sliderValueBlue: UISlider!
